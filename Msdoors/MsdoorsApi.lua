@@ -1,3 +1,4 @@
+print("[Msdoors Api] Api Carregada com Sucesso! 🎉")
 local function MsdoorsNotify(title, description, image, color, time)
     title = title or "Sem Título"
     description = description or "Sem Descrição"
