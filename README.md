@@ -11,9 +11,7 @@ Esse script cria um sistema de notificações avançado inspirado no estilo visu
 ## 📦 Instalação
 Para usar o script, basta carregá-lo usando o `loadstring` do GitHub:
 
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Sc-Rhyan57/Notification-doorsAPI/refs/heads/main/Msdoors/doors-API.lua"))()
-```
+para instalar copie o conteúdo do [link](https://raw.githubusercontent.com/Sc-Rhyan57/Notification-doorsAPI/refs/heads/main/Msdoors/doors-API.lua) e coloque no seu Script.
 
 Após o carregamento, você terá acesso à função `DoorsEmblem`, que pode ser usada para criar notificações customizadas.
 
