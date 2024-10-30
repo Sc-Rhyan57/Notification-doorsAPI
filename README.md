@@ -12,7 +12,9 @@
 2. **Verifique os Guias**: As notificações precisam de um GUI principal (`PlayerGui`) contendo `MainUI`. Certifique-se de que a interface gráfica do jogo tem essas configurações para que a função funcione corretamente.
 
 ## 📥 Baixando e Instalando (POR API)
-
+```lua
+local MsdoorsNotify = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sc-Rhyan57/Notification-doorsAPI/refs/heads/main/Msdoors/MsdoorsApi.lua"))()
+```
 ---
 
 ## 🎨 Como Usar
@@ -53,6 +55,11 @@ MsdoorsNotify(
     Color3.new(0, 1, 0), 
     5
 )
+```
+
+## ⚙️ Exemplo de uso com api
+```lua
+MsdoorsNotify("Título de Exemplo", "Esta é uma notificação de teste!", "rbxassetid://6023426923", Color3.new(0, 1, 0), 5)
 ```
 
 ### 2. Exemplo com Parâmetros Padrão
