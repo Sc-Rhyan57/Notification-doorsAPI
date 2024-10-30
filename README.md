@@ -20,11 +20,11 @@ Após o carregamento, você terá acesso à função `DoorsEmblem`, que pode ser
 ### 1. Notificação de Alerta (Borda Vermelha)
 Para criar uma notificação de alerta, com borda vermelha e um ícone específico:
 ```lua
-DoorsEmblem({
-    type = "alert",  -- Tipo de notificação
-    Title = "Aviso de Perigo!",  -- Título
-    Description = "Uma entidade hostil foi detectada!",  -- Descrição
-    Time = 5  -- Duração da notificação em segundos
+DoorsStyleNotification({
+    type = "alert", -- Tipo de notificação
+    Title = "Perigo!", -- Titulo
+    Description = "Uma entidade foi detectada.", -- Descrição
+    time = 6 -- Duração da Notificação
 })
 ```
 
