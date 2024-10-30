@@ -12,7 +12,7 @@ Esse script cria um sistema de notificações avançado inspirado no estilo visu
 Para usar o script, basta carregá-lo usando o `loadstring` do GitHub:
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SeuUsuario/SeuRepositorio/main/SeuArquivo.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sc-Rhyan57/Notification-doorsAPI/refs/heads/main/Msdoors/doors-API.lua"))()
 ```
 
 Após o carregamento, você terá acesso à função `DoorsEmblem`, que pode ser usada para criar notificações customizadas.
