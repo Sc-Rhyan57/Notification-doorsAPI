@@ -6,6 +6,7 @@
 ---
 
 ## 📥 Baixando e Instalando (DIRETO NO SCRIPT)
+> [Baixe Aqui](https://github.com/Sc-Rhyan57/Notification-doorsAPI/blob/main/Msdoors/Msdoors.lua)
 
 1. **Baixe o Script**: Copie o código da função `MsdoorsNotify` e adicione ao seu script no Roblox Studio.
 2. **Verifique os Guias**: As notificações precisam de um GUI principal (`PlayerGui`) contendo `MainUI`. Certifique-se de que a interface gráfica do jogo tem essas configurações para que a função funcione corretamente.
