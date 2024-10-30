@@ -59,6 +59,8 @@ MsdoorsNotify(
 
 ## ⚙️ Exemplo de uso com api
 ```lua
+local MsdoorsNotify = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sc-Rhyan57/Notification-doorsAPI/refs/heads/main/Msdoors/MsdoorsApi.lua"))()
+
 MsdoorsNotify("Título de Exemplo", "Esta é uma notificação de teste!", "rbxassetid://6023426923", Color3.new(0, 1, 0), 5)
 ```
 
