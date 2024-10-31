@@ -30,6 +30,7 @@ MsdoorsNotify(title, description, reason, image, color, time)
 ### Descrição dos Parâmetros
 
 | Parâmetro     | Tipo      | Descrição                                                                                                     | Obrigatório |
+|---------------
 |---------------|-----------|---------------------------------------------------------------------------------------------------------------|-------------|
 | `title`       | `string`  | 🔤 O título da notificação, exibido em destaque.                                                               | Não         |
 | `description` | `string`  | 📝 O conteúdo da notificação, aparecendo abaixo do título.                                                    | Não 
