@@ -1,6 +1,7 @@
 print("[Msdoors Api] Api Carregada com Sucesso! 🎉")
-local function MsdoorsNotify(title, description, reason, image, color, time)
+local function MsdoorsNotify(ptitle, title, description, reason, image, color, time)
     title = title or "Sem Título"
+    ptitle = ptitle or "Msdoors API"
     description = description or "Sem Descrição"
     reason = reason or ""
     image = image or "rbxassetid://98998245307280"
@@ -17,6 +18,7 @@ local function MsdoorsNotify(title, description, reason, image, color, time)
 
         achievement.Frame.Details.Desc.Text = description
         achievement.Frame.Details.Title.Text = title
+        achievement.Frame.TextLabel.Text = ptitle
         achievement.Frame.Details.Reason.Text = reason
         achievement.Frame.ImageLabel.Image = image
 
