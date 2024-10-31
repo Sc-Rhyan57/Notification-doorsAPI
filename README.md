@@ -37,6 +37,8 @@ MsdoorsNotify(title, description, reason, image, color, time)
 | `color`       | `Color3`  | 🎨 Cor do texto e detalhes visuais. Caso não seja especificado, a cor padrão é branca.                         | Não         |
 | `time`        | `number`  | ⏳ O tempo (em segundos) que a notificação será exibida antes de desaparecer. O padrão é 5 segundos.           | Não         |
 
+| `reason`        | `string`  | 📝 Reação do script.         | Não         |
+
 > **Nota:** Caso algum parâmetro não seja especificado, a função usa valores padrão para garantir que a notificação seja exibida corretamente. 🎉
 
 ---
