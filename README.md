@@ -43,6 +43,7 @@ MsdoorsNotify(title, description, reason, image, color, time)
 
 > **Nota:** Caso algum parâmetro não seja especificado, a função usa valores padrão para garantir que a notificação seja exibida corretamente. 🎉
 
+![Minha Imagem](assets/Screenshot_20241031-194616.png)
 ---
 
 ## ⚙️ Exemplos de Uso
