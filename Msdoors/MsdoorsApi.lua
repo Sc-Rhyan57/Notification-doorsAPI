@@ -1,4 +1,5 @@
 print("[Msdoors Api] Api Carregada com Sucesso! 🎉")
+
 local function MsdoorsNotify(ptitle, title, description, reason, image, color, time)
     title = title or "Sem Título"
     ptitle = ptitle or "Msdoors API"
@@ -46,3 +47,4 @@ local function MsdoorsNotify(ptitle, title, description, reason, image, color, t
 end
 
 return MsdoorsNotify
+
