@@ -1,3 +1,4 @@
+
 # 🌟 MsdoorsNotify - Notificações ao Estilo "Doors" para Roblox 🌟
 > Funciona apenas no **__Doors__** e nos fã games!
 
@@ -24,15 +25,14 @@ A função `MsdoorsNotify` facilita a criação de notificações animadas e per
 ### Sintaxe
 
 ```lua
-MsdoorsNotify(ptitle, title, description, reason, image, color, time)
+MsdoorsNotify(title, description, reason, image, color, time)
 ```
 
 ### Descrição dos Parâmetros
 
 | Parâmetro     | Tipo      | Descrição                                                                                                     | Obrigatório |
 |---------------|-----------|---------------------------------------------------------------------------------------------------------------|-------------|
-| `ptitle`      | `string`  | 🔤 O título principal da notificação (exibido no topo).                                                       | Não         |
-| `title`       | `string`  | 🔤 O subtítulo da notificação, exibido em destaque.                                                           | Não         |
+| `title`       | `string`  | 🔤 O subtítulo da notificação, exibido em destaque abaixo do título fixo.                                     | Não         |
 | `description` | `string`  | 📝 O conteúdo da notificação, aparecendo abaixo do título.                                                    | Não         |
 | `reason`      | `string`  | 📝 Explicação ou contexto para a notificação.                                                                 | Não         |
 | `image`       | `string`  | 🌄 ID da imagem no formato `rbxassetid://`. Se não fornecido, uma imagem padrão será usada.                    | Não         |
@@ -51,7 +51,6 @@ Cria uma notificação com título, descrição, imagem, cor e duração persona
 
 ```lua
 MsdoorsNotify(
-    "MsDoors Notifier",          -- Título principal
     "Bem-vindo! 🎉",              -- Subtítulo
     "Essa é uma notificação de exemplo com estilo! 😎",
     "MsDoors Example",
@@ -81,10 +80,10 @@ MsdoorsNotify(
 Caso queira usar o estilo padrão, basta fornecer os parâmetros mínimos:
 
 ```lua
-MsdoorsNotify("MsDoors API", "Alerta ⚠️", "Verifique a nova atualização!")
+MsdoorsNotify("Alerta ⚠️", "Verifique a nova atualização!")
 ```
 
-Nesse exemplo, apenas `ptitle`, `title` e `description` foram especificados, enquanto `image`, `reason`, `color` e `time` assumem os valores padrão. 🎈
+Nesse exemplo, apenas `title` e `description` foram especificados, enquanto `image`, `reason`, `color` e `time` assumem os valores padrão. 🎈
 
 ---
 
@@ -120,9 +119,9 @@ MsdoorsNotify(
 ```
 
 Esse código cria uma notificação com:
-- Título principal "Novo Nível Desbloqueado!"
-- Subtítulo e descrição informativa
-- Explicação contextualizada
+- Título principal fixo "MsDoors API"
+- Subtítulo "Novo Nível Desbloqueado!"
+- Descrição e motivo detalhado
 - Imagem customizada
 - Cor laranja brilhante
 - Duração de 7 segundos
@@ -132,3 +131,4 @@ Esse código cria uma notificação com:
 ## 📄 Licença
 
 Este código está sob a **Licença MIT** – você é livre para usá-lo e modificá-lo como quiser! 🎉
+```
