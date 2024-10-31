@@ -1,5 +1,5 @@
 print("[Msdoors Api] Api Carregada com Sucesso! 🎉")
-local function MsdoorsNotify(title, description, image, color, time)
+local function MsdoorsNotify(title, description, reason, image, color, time)
     title = title or "Sem Título"
     description = description or "Sem Descrição"
     reason = reason or ""
