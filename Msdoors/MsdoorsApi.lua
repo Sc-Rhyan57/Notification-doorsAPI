@@ -4,7 +4,7 @@ local function MsdoorsNotify(title, description, reason, image, color, time)
     title = title or "Sem Título"
     description = description or "Sem Descrição"
     reason = reason or ""
-    image = image or "rbxassetid://98998245307280"
+    image = image or "rbxassetid://133997875469993"
     color = color or Color3.new(1, 1, 1)
     time = time or 5
 
