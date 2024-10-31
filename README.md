@@ -2,6 +2,8 @@
 # 🌟 MsdoorsNotify - Notificações ao Estilo "Doors" para Roblox 🌟
 > Funciona apenas no **__Doors__** e nos fã games!
 
+![Minha Imagem](assets/Screenshot_20241031-194526~2.png)
+
 `MsdoorsNotify` é uma função poderosa e fácil de usar para criar notificações inspiradas no jogo "Doors" do Roblox. Com ela, você pode exibir alertas visuais e auditivos estilizados com título, descrição, imagem e personalizações de cor e tempo! 🖥️🎨
 
 ---
