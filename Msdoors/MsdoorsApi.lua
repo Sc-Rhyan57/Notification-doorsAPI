@@ -16,7 +16,7 @@ local function MsdoorsNotify(title, description, reason, image, color, time)
         achievement.Name = "LiveAchievement"
         achievement.Visible = true
 
-        achievement.Frame.TextLabel.Text = "MsDoors API"
+        achievement.Frame.TextLabel.Text = "Notification"
         achievement.Frame.Details.Title.Text = title
         achievement.Frame.Details.Desc.Text = description
         achievement.Frame.Details.Reason.Text = reason
