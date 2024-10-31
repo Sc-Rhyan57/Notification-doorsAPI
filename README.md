@@ -131,4 +131,3 @@ Esse código cria uma notificação com:
 ## 📄 Licença
 
 Este código está sob a **Licença MIT** – você é livre para usá-lo e modificá-lo como quiser! 🎉
-```
