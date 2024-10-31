@@ -32,7 +32,7 @@ MsdoorsNotify(title, description, reason, image, color, time)
 | Parâmetro     | Tipo      | Descrição                                                                                                     | Obrigatório |
 |---------------|-----------|---------------------------------------------------------------------------------------------------------------|-------------|
 | `title`       | `string`  | 🔤 O título da notificação, exibido em destaque.                                                               | Não         |
-| `description` | `string`  | 📝 O conteúdo da notificação, aparecendo abaixo do título.                                                    | Não         
+| `description` | `string`  | 📝 O conteúdo da notificação, aparecendo abaixo do título.                                                    | Não |        
 | `reason`        | `string`  | 📝 O conteúdo da reação da notificação.(fica abaixo da descrição).           | Não         |
 
 | `image`       | `string`  | 🌄 ID da imagem no formato `rbxassetid://`. Se não fornecido, uma imagem padrão será usada.                    | Não         |
