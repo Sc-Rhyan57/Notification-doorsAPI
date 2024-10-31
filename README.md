@@ -24,7 +24,7 @@ A função `MsdoorsNotify` facilita a criação de notificações animadas e per
 ### Sintaxe
 
 ```lua
-MsdoorsNotify(title, description, image, color, time)
+MsdoorsNotify(title, description, reason, image, color, time)
 ```
 
 ### Descrição dos Parâmetros
@@ -32,7 +32,9 @@ MsdoorsNotify(title, description, image, color, time)
 | Parâmetro     | Tipo      | Descrição                                                                                                     | Obrigatório |
 |---------------|-----------|---------------------------------------------------------------------------------------------------------------|-------------|
 | `title`       | `string`  | 🔤 O título da notificação, exibido em destaque.                                                               | Não         |
-| `description` | `string`  | 📝 O conteúdo da notificação, aparecendo abaixo do título.                                                    | Não         |
+| `description` | `string`  | 📝 O conteúdo da notificação, aparecendo abaixo do título.                                                    | Não         
+| `reason`        | `string`  | 📝 O conteúdo da reação da notificação.(fica abaixo da descrição).           | Não         |
+
 | `image`       | `string`  | 🌄 ID da imagem no formato `rbxassetid://`. Se não fornecido, uma imagem padrão será usada.                    | Não         |
 | `color`       | `Color3`  | 🎨 Cor do texto e detalhes visuais. Caso não seja especificado, a cor padrão é branca.                         | Não         |
 | `time`        | `number`  | ⏳ O tempo (em segundos) que a notificação será exibida antes de desaparecer. O padrão é 5 segundos.           | Não         |
@@ -50,7 +52,8 @@ Cria uma notificação com título, descrição, imagem, cor e duração persona
 ```lua
 MsdoorsNotify(
     "Bem-vindo! 🎉", 
-    "Essa é uma notificação de exemplo com estilo! 😎", 
+    "Essa é uma notificação de exemplo com estilo! 😎",
+    "MsDoors Notifier",
     "rbxassetid://6023426923", 
     Color3.new(0, 1, 0), 
     5
@@ -61,7 +64,7 @@ MsdoorsNotify(
 ```lua
 local MsdoorsNotify = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sc-Rhyan57/Notification-doorsAPI/refs/heads/main/Msdoors/MsdoorsApi.lua"))()
 
-MsdoorsNotify("Título de Exemplo", "Esta é uma notificação de teste!", "rbxassetid://6023426923", Color3.new(0, 1, 0), 5)
+MsdoorsNotify("Título de Exemplo", "Esta é uma notificação de teste!","DreamAlt Exemplo" ,"rbxassetid://6023426923", Color3.new(0, 1, 0), 5)
 ```
 
 ### 2. Exemplo com Parâmetros Padrão
@@ -72,7 +75,7 @@ Caso queira usar o estilo padrão, basta fornecer os parâmetros mínimos:
 MsdoorsNotify("Alerta ⚠️", "Verifique a nova atualização!")
 ```
 
-Nesse exemplo, apenas `title` e `description` foram especificados, enquanto `image`, `color` e `time` assumem os valores padrão. 🎈
+Nesse exemplo, apenas `title` e `description` foram especificados, enquanto `image`, `reason`  `color` e `time` assumem os valores padrão. 🎈
 
 ---
 
@@ -99,7 +102,8 @@ Você pode personalizar totalmente as notificações através dos parâmetros fo
 ```lua
 MsdoorsNotify(
     "Novo Nível Desbloqueado! 🚀", 
-    "Parabéns por atingir o nível 10!", 
+    "Parabéns por atingir o nível 10!",
+     "Enviado por MsDoors",
     "rbxassetid://1069157975", 
     Color3.new(1, 0.5, 0), 
     7
@@ -109,6 +113,7 @@ MsdoorsNotify(
 Esse código cria uma notificação com:
 - Título "Novo Nível Desbloqueado!"
 - Descrição informativa e personalizada
+- Reação da Notificação
 - Imagem customizada
 - Cor laranja brilhante
 - Duração de 7 segundos
