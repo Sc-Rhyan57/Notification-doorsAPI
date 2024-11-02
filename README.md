@@ -69,8 +69,8 @@ MsdoorsNotify(
 local MsdoorsNotify = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sc-Rhyan57/Notification-doorsAPI/refs/heads/main/Msdoors/MsdoorsApi.lua"))()
 
 MsdoorsNotify(
-    "DreamAlt Exemplo", 
-    "Título de Exemplo", 
+    "Título Exemplo", 
+    "descrição de Exemplo", 
     "Esta é uma notificação de teste!", 
     "rbxassetid://6023426923", 
     Color3.new(0, 1, 0), 
