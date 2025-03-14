@@ -1,5 +1,3 @@
-print("[Msdoors Api] Api Carregada com Sucesso! 🎉")
-
 local function MsdoorsNotify(title, description, reason, image, color, time)
     title = title or "Sem Título"
     description = description or "Sem Descrição"
@@ -20,7 +18,12 @@ local function MsdoorsNotify(title, description, reason, image, color, time)
         achievement.Frame.Details.Title.Text = title
         achievement.Frame.Details.Desc.Text = description
         achievement.Frame.Details.Reason.Text = reason
-        achievement.Frame.ImageLabel.Image = image
+        
+        if image:match("rbxthumb://") or image:match("rbxassetid://") then
+            achievement.Frame.ImageLabel.Image = image
+        else
+            achievement.Frame.ImageLabel.Image = "rbxassetid://" .. image
+        end
 
         if color then
             achievement.Frame.TextLabel.TextColor3 = color
@@ -33,12 +36,22 @@ local function MsdoorsNotify(title, description, reason, image, color, time)
         achievement.Sound.Volume = 1
         achievement.Sound:Play()
 
-        achievement:TweenSize(UDim2.new(1, 0, 0.2, 0), "In", "Quad", 0.8, true)
-        task.wait(0.8)
-        achievement.Frame:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true)
-
-        task.delay(time, function()
+        task.spawn(function()
+            achievement:TweenSize(UDim2.new(1, 0, 0.2, 0), "In", "Quad", 0.8, true)
+            
+            task.wait(0.8)
+            
+            achievement.Frame:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true)
+            
+            game:GetService("TweenService"):Create(achievement.Frame.Glow, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+                ImageTransparency = 1
+            }):Play()
+            
+            task.wait(time)
+            
             achievement.Frame:TweenPosition(UDim2.new(1.1, 0, 0, 0), "In", "Quad", 0.5, true)
+            task.wait(0.5)
+            achievement:TweenSize(UDim2.new(1, 0, -0.1, 0), "InOut", "Quad", 0.5, true)
             task.wait(0.5)
             achievement:Destroy()
         end)
